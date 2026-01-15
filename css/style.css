@@ -1,0 +1,184 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #5E4E6B;
+      color: rgb(255, 255, 255);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 5%;
+      background-color: #6e5a7e;
+    }
+    .logo {
+      height: 50px;
+    }
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 5%;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+      margin-bottom: 1.5rem;
+    }
+    .github-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      background-color: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s;
+      margin-top: 1rem;
+    }
+    .github-link:hover {
+      background-color: #333;
+      transform: translateY(-2px);
+    }
+    .github-icon {
+      width: 24px;
+      height: 24px;
+    }
+    .screenshots {
+      position: relative;
+      height: 400px;
+      margin: 2rem 5%;
+      display: flex;
+      align-items: center;
+    }
+    .screenshot {
+      position: absolute;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+    a.visible-link{
+    visibility: hidden;
+    }
+    .left {
+      width: 65%;
+      left: 0;
+      clip-path: polygon(0 0, 90% 0, 75% 100%, 0 100%);
+      background-image: url('https://placehold.co/600x400/FFD700/000000?text=Honeycomb');
+    }
+    .right {
+      width: 65%;
+      right: 0;
+      clip-path: polygon(25% 0, 100% 0, 100% 100%, 10% 100%);
+      background-image: url('https://placehold.co/600x400/FFA500/000000?text=Orange');
+    }
+    .projects-section {
+      background-color: #5E4E6B;
+      padding: 3rem 5%;
+      text-align: center;
+    }
+    .project-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .project-item {
+      width: 30%;
+      text-align: center;
+    }
+    .project-item img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border: 2px solid white;
+    }
+    .project-item p {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: white;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 3rem auto;
+      padding: 0 5%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #5E4E6B;
+      color: white;
+    }
+    .contact-form button {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    .contact-form button:hover {
+      opacity: 0.9;
+    }
+    .footer {
+      background-color: rgb(64, 51, 71);
+      padding: 2rem 5%;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .screenshots {
+        height: 300px;
+      }
+      .left, .right {
+        width: 100%;
+      }
+      .left {
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+      }
+      .right {
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+      }
+      .project-item {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
